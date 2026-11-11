@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/app.js" defer> </script>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <main class="app">
+        <h1>Lista de tareas</h1>
+
+        <section class="contador">
+            <p>
+                Total de tareas:
+                <strong id="total">0</strong>
+            </p>
+            <p>
+                Completadas:
+                <strong id="completadas">0</strong>
+            </p>
+            <p>
+                Pendientes:
+                <strong id="pendientes">0</strong>
+            </p>
+
+            <div class="barra">
+                <div class="barraprogreso" id="barraprogreso"></div>
+            </div>
+        </section>
+
+        <form id="formtarea" class="formulario">
+            <input type="text" id="inputtarea" placeholder="Escribe tu tarea">
+            <button type="submit" class="btn btnagregar">Agregar tarea</button>
+        </form>
+
+        <p id="mensajeerror" class="error"></p>
+
+        <ul id="listatareas" class="lista"></ul>
+
+        <p id="vacio" class="vacio">No hay tareas todavía.</p>
+    </main>
+</body>
+</html>
